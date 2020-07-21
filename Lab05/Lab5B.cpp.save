@@ -1,0 +1,52 @@
+/* Author: Peyton Thibodeaux (Peytonthibodeaux@my.unt.edu)
+ Date: 10/3/19
+ Instructor:Dr. Pradhumna Shrestha
+ Description:This program
+*/
+
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+using namespace std;
+
+int main () {
+//variables
+int index = 0, count_letter = 0, count_num = 0, count_space = 0, count_special = 0;
+string my_str;
+
+//get string
+cout << "Enter a string ";
+getline(cin, my_str);
+
+
+
+while(index < my_str.length())
+{
+
+	if (isalpha(my_str.at(index)))
+	{
+		count_letter ++;
+	}
+	else if (isdi)
+	{
+		count_num ++;
+	} 
+		else if (isspace(extracted))
+	{
+		count_space ++;
+	}
+ 	else
+	{
+		count_special ++;
+	}
+
+
+
+
+}
+
+
+
+return 0;
+}
+

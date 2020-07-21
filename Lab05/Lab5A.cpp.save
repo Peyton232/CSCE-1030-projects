@@ -1,0 +1,44 @@
+/* Author: Peyton Thibodeaux (Peytonthibodeaux@my.unt.edu)
+ Date: 10/3/19
+ Instructor:Dr. Pradhumna Shrestha
+ Description:This program 
+*/
+
+#include <iostream>
+#include <math.h>
+#include <stdio.h>
+using namespace std;
+
+int main () {
+//random seed time
+srand(time(NULL));
+//string
+string my_str = "This is a strng I am using in @ Lab5 of CSCE1030";
+
+//initiliaze random seed
+int index = rand() % (my_str.length());
+char extracted = my_str.at(index);
+
+//test
+cout <<extracted << endl;
+
+//cout for random string
+if (isalpha(extracted))
+{
+	cout << "Letter."<<endl;
+}
+else if (isdigit(extracted))
+{
+	cout << "number" << endl;
+} else if (isspace(extracted))
+{
+	cout << "Space." << endl;
+} else
+{
+	cout << "Puncutation" << endl;
+}
+
+
+return 0;
+}
+
